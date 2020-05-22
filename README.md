@@ -8,3 +8,4 @@ Usage:
 5. Add and commit all the new changes
 6. Got to step 1 until the model is not good enough.
 
+Note, you need to use `--run-cache` option for `dvc pull` and `dvc push` to manage the run-cache. The same way you need to pull\push on the CI/CD workflow.

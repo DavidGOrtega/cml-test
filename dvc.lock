@@ -2,7 +2,7 @@ trainme:
   cmd: python train.py
   deps:
   - path: train.py
-    md5: 0212bf231915af52e97a8114eb4ed7d1
+    md5: f0aa63fae5214393630ef3cb5ade8a4a
   - path: users.csv
     md5: fadc70dff966edd21b3dd2b0c2755189
   params:
@@ -12,8 +12,10 @@ trainme:
       log_file: logs.csv
   outs:
   - path: logs
-    md5: 0bcd8383357b6e038284f0593624645b.dir
+    md5: b9a6f745293df531687433bdc2518458.dir
   - path: logs.csv
-    md5: becf6e4931a41ad6d42f8ec2d0b6a24f
+    md5: de3de2dae6d561983c1b2d68672da663
+  - path: model.h5
+    md5: 56d9cedc8be27169ae7523c28246234d
   - path: summary.json
-    md5: adac67b623217898455888036a535b42
+    md5: 51dc6237fff4e2c9664c373ecf613682

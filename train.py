@@ -50,3 +50,5 @@ with open("summary.json", "w") as fd:
         "time_process": end_process - start_process
     }, fd)
 
+model.save('model.h5')
+

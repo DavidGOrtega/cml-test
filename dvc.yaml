@@ -9,6 +9,7 @@ stages:
     - log_file
     - dropout
     outs:
+    - model.h5
     - logs
     metrics:
     - summary.json:

@@ -1,0 +1,7 @@
+md5: c0787b4736c133fd51ed23708784355e
+outs:
+- md5: fadc70dff966edd21b3dd2b0c2755189
+  path: users.csv
+  cache: true
+  metric: false
+  persist: false

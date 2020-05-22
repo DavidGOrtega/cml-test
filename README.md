@@ -9,3 +9,5 @@ Usage:
 6. Got to step 1 until the model is not good enough.
 
 Note, you need to use `--run-cache` option for `dvc pull` and `dvc push` to manage the run-cache. The same way you need to pull\push on the CI/CD workflow.
+
+Note 2, you need to uninstall DVC from our docker and install DVC 1.0 (see the workflow file). 

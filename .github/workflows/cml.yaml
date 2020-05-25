@@ -28,7 +28,7 @@ jobs:
           echo 'CML' > report.md
 
           # TB credentials issue
-          pip install tensorboard
+          #pip install tensorboard
           cml-tensorboard-dev --logdir logs --md --name "Go to TB" >> report.md
           cml-send-comment report.md
           

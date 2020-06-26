@@ -25,7 +25,7 @@ jobs:
 
           #dvc pull --run-cache
           
-          echo 'CML' > report.md
+          echo 'CML tb test' > report.md
 
           ## TB credentials issue
           #pip install tensorboard

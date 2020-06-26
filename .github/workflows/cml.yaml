@@ -18,24 +18,24 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           TB_CREDENTIALS: ${{ secrets.TB_CREDENTIALS }}
         run: |
-          apt-get --purge remove -y dvc
+          #apt-get --purge remove -y dvc
 
-          pip install "git+https://github.com/iterative/dvc#egg=dvc[s3]"
-          dvc -V
+          #pip install "git+https://github.com/iterative/dvc#egg=dvc[s3]"
+          #dvc -V
 
-          dvc pull --run-cache
+          #dvc pull --run-cache
           
           echo 'CML' > report.md
 
           ## TB credentials issue
           #pip install tensorboard
-          #cml-tensorboard-dev --logdir logs --md --name "Go to TB" >> report.md
+          cml-tensorboard-dev --logdir logs --md --name "Go to TB" >> report.md
           #cml-send-comment report.md
           
-          pip install -r requirements.txt
-          dvc repro
+          #pip install -r requirements.txt
+          #dvc repro
 
-          dvc push --run-cache
+          #dvc push --run-cache
 
-          cml-send-github-check report.md
+          cml-send-comment report.md
 
